@@ -13,6 +13,8 @@ services:
       - db:/data
 
   lodview:
+    depends_on:
+      - virtuoso
     build: ./lodview
     image: rendxn/lodview
     container_name: lodview
