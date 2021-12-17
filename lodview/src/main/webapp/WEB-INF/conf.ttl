@@ -52,6 +52,7 @@
 @prefix claros: <http://purl.org/NET/Claros/vocab#> .
 @prefix crm120111: <http://erlangen-crm.org/120111/> .
 @prefix rel: <http://purl.org/vocab/relationship/> .
+# @prefix countries: <http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries/> .
 
 
 <> a conf:Configuration;
@@ -60,11 +61,11 @@
 ## 	IRIs namespace we use to replace the webapp base (eg. http://localhost:8080/lodview/), an
 ##	installation on dbpedia domain should use <http://dbpedia.org/resource/> 
 	
-	conf:IRInamespace <http://localhost:8890/>  ;
+	conf:IRInamespace <http://www.bpiresearch.com/BPMO/2004/03/03/cdl/Countries/>  ;
 
 ## 	EndPoint
 
-	conf:endpoint <http://localhost:8890/sparql>;
+	conf:endpoint <https://09b9-186-80-28-3.ngrok.io/sparql>;
 	conf:endpointType "virtuoso"; 	## 	just "virtuoso" is handled right now, this will add some "rawdata" 
 									##	options in the footer, leave this blank if you don't want these links
 

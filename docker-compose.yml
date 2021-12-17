@@ -4,8 +4,6 @@ services:
   virtuoso:
     image: tenforce/virtuoso
     container_name: tenforce_virtuoso
-    env_file:
-      - .env
     ports:
       - "1111:1111"
       - "8890:8890"
